@@ -6,26 +6,27 @@ import jakarta.validation.constraints.Size;
 
 public record PacienteRequestDTO(
 
-        @NotBlank
+        @NotBlank(message = "Nome do paciente é obrigatório")
         String nome,
 
-        @Email
-        @NotBlank
+        @Email(message = "Deve ser um email")
+        @NotBlank(message = "Email do paciente é obrigatório")
         String email,
 
         @Size(min = 6)
+        @NotBlank(message = "Senha do paciente é obrigatória")
         String senha,
 
-        @NotBlank
-        @Size(min = 11, max = 11)
+        @NotBlank(message = "O Cpf é obrigatório")
+        @Size(min = 11, max = 11, message = "Cpf deve conter 11 caracteres")
         String cpf,
 
-        @NotBlank
-        @Size(min = 12, max = 12)
+        @NotBlank(message = "Telefone é obrigatório")
+        @Size(min = 11, max = 11, message = "Telefone deve conter 11 caracteres")
         String telefone,
 
-        @NotBlank
-        @Size(min = 8, max = 8)
+        @NotBlank(message = "Cep é obrigatório")
+        @Size(min = 8, max = 8, message = "Cep deve conter 8 caracteres")
         String cep
 ) {
 }
