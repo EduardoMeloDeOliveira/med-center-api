@@ -1,5 +1,6 @@
 package io.github.EduardoMeloDeOliveira.med_center_api_v1.domain.pacientes.entity;
 
+import io.github.EduardoMeloDeOliveira.med_center_api_v1.domain.pacientes.dto.PacienteRequestDTO;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -29,5 +30,13 @@ public class Paciente {
     private String cpf;
 
     private String telefone;
+
+    public Paciente (PacienteRequestDTO requestDTO){
+        this.nome = requestDTO.nome();
+        this.email = requestDTO.email();
+        this.senha = requestDTO.senha();
+        this.cpf = requestDTO.cpf();
+        this.telefone = requestDTO.telefone();
+    }
 
 }
