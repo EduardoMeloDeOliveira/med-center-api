@@ -1,0 +1,13 @@
+version : "3.8"
+
+services:
+
+  med-center-v1-db:
+    image: postgres:latest
+    container_name: med-center-v1-db
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: 1033
+      POSTGRES_DB: med-center
+    ports:
+      - "5432:5432"
