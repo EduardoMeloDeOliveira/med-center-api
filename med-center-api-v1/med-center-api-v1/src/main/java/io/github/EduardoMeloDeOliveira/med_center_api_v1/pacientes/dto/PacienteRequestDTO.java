@@ -1,4 +1,4 @@
-package io.github.EduardoMeloDeOliveira.med_center_api_v1.domain.pacientes.dto;
+package io.github.EduardoMeloDeOliveira.med_center_api_v1.pacientes.dto;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;

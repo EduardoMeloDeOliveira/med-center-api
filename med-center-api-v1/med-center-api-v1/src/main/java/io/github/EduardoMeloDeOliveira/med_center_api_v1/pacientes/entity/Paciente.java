@@ -1,6 +1,6 @@
-package io.github.EduardoMeloDeOliveira.med_center_api_v1.domain.pacientes.entity;
+package io.github.EduardoMeloDeOliveira.med_center_api_v1.pacientes.entity;
 
-import io.github.EduardoMeloDeOliveira.med_center_api_v1.domain.pacientes.dto.PacienteRequestDTO;
+import io.github.EduardoMeloDeOliveira.med_center_api_v1.pacientes.dto.PacienteRequestDTO;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
